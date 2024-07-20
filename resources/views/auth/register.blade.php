@@ -1,5 +1,5 @@
 @extends('layouts.auth')
-
+@section('title', 'register form')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

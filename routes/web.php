@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -12,7 +13,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/showPost/{id}', [PostController::class, 'show'])->name('showPost');
 Route::get('/search', [PostController::class, 'search'])->name('search');
-
 
 Route::middleware('customAuth')->group(function () {
     Route::get('/myPosts', [PostController::class, 'index'])->name('myPosts');
