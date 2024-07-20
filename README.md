@@ -115,15 +115,15 @@ php artisan test
 ```
 
 ## Features
-Authentication (registration, login, logout)
-Home page displaying posts
-Show single post with comments
-Adding a comments to a post
-Search posts
-Tags on posts
-Creating Posts by authenticated users
-MyPosts showing single user posts 
-editing and deleting option to the authenicated user post
+Authentication (registration, login, logout), 
+Home page displaying posts, 
+Show single post with comments, 
+Adding a comments to a post,
+Search posts,
+Tags on posts,
+Creating Posts by authenticated users,
+MyPosts showing single user posts,
+editing and deleting option to the authenicated user post.
 
 ## License
 
