@@ -1,4 +1,4 @@
-# Blog Application
+# BlogApp
 
 A simple blog application built using php/laravel and Javascript along side a simple UI using Html/Css/Bootstrap
 
