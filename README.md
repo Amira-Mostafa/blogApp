@@ -1,9 +1,6 @@
-# blogApp
+# Blog Application
 
-simple blog application built using php/laravel and Javascript along side a simple UI using Html/Css/bootstrap
-## Laravel Blog Application
-
-A simple blog application built with Laravel.
+A simple blog application built using php/laravel and Javascript along side a simple UI using Html/Css/Bootstrap
 
 ## Table of Contents
 
@@ -12,20 +9,14 @@ A simple blog application built with Laravel.
 - [Running the Application](#running-the-application)
 - [Database Setup](#database-setup)
 - [Testing](#testing)
-- [Contributing](#contributing)
 - [License](#license)
 
-<<<<<<< HEAD
 ## Requirements
 
 - PHP 7.4 or higher
 - Composer
 - MySQL or MariaDB
 - Node.js and NPM (for frontend assets)
-=======
->>>>>>> 604c208db495e2de4ad68642e3f95ab52b422163
-
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -34,7 +25,6 @@ A simple blog application built with Laravel.
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-<<<<<<< HEAD
 ## Setup Instructions
 
 Follow these steps to set up and configure the application.
@@ -43,17 +33,13 @@ Follow these steps to set up and configure the application.
 
 ```bash
 git clone https://github.com/Amira-Mostafa/blogApp.git
+cd blogApp
 ```
 
-2. Install PHP Dependencies
+2. Install PHP and Node.js Dependencies
 
 ```bash
 composer install
-```
-
-3. Install Node.js Dependencies
-
-```bash
 npm install
 ```
 
@@ -65,47 +51,22 @@ Copy the .env.example file to .env:
 cp .env.example .env
 ```
 
-Open the .env file and configure the database and other environment variables.
+```bash
+APP_NAME=blogApp
+```
 
-5. Generate the Application Key
+4. Generate the Application Key
 
 ```bash
 php artisan key:generate
 ```
 
-## Running the Application
-
-1. Run Migrations
-
-```bash
-Copy code
-php artisan migrate
-```
-
-2. Seed the Database
-
-```bash
-php artisan db:seed
-```
-
-3. Compile Frontend Assets
-
-```bash
-npm run dev
-```
-4. Start the Development Server
-
-The application will be available at http://localhost:8000.
-
-```bash
-php artisan serve
-```
-
 ## Database Setup
 
-1. Create a Database
+1. Create a new database in your MySQL or MariaDB server.
 
-Create a new database in your MySQL or MariaDB server.
+import the attached database file into your server
+
 
 2. Configure .env
 
@@ -115,16 +76,9 @@ Update your .env file with the database credentials:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=blog_application 
+DB_DATABASE=blogApp 
 DB_USERNAME=root
 DB_PASSWORD=
-```
-
-and application name
-
-
-```bash
-APP_NAME=blogApp
 ```
 
 3. Run Migrations and Seeders
@@ -135,20 +89,29 @@ php artisan migrate
 php artisan db:seed
 ```
 
+## Running the Application
+
+1. Compile Frontend Assets
+
+```bash
+npm run dev
+```
+
+2. Start the Development Server
+
+
+```bash
+php artisan serve
+```
+The application should now be running at `http://127.0.0.1:8000`.
+
 
 ## Testing
-To run tests :
+To run test suite :
 
 ```bash
 php artisan test
 ```
-
-## Contributing
-Fork the repository.
-Create a feature branch (git checkout -b feature/your-feature).
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature/your-feature).
-Create a new Pull Request.
 
 ## License
 
@@ -156,8 +119,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 ## About Laravel
-=======
->>>>>>> 604c208db495e2de4ad68642e3f95ab52b422163
 
   
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:

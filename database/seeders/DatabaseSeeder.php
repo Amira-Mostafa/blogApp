@@ -15,11 +15,24 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         User::factory(10)->create();
-        User::factory()->create([
-            'username' => 'ordinaryUser ',
-            'email' => 'ordinaryUser@gmail',
-            'password' => 1111111111,
+
+        Tag::factory()->create([
+            'title' => 'social ',
         ]);
-        Tag::factory(10)->create();
+        Tag::factory()->create([
+            'title' => 'fashion ',
+        ]);
+        Tag::factory()->create([
+            'title' => 'economy',
+        ]);
+        Tag::factory()->create([
+            'title' => 'political',
+        ]);
+        Tag::factory()->create([
+            'title' => 'life',
+        ]);
+        Tag::factory()->create([
+            'title' => 'technology',
+        ]);
     }
 }
