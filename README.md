@@ -1,4 +1,24 @@
-<<<<<<< HEAD
+# blogApp
+
+simple blog application built using php/laravel and Javascript along side a simple UI using Html/Css/bootstrap
+
+## Table of Contents
+
+- [Requirements](#requirements)
+- [Setup Instructions](#setup-instructions)
+- [Running the Application](#running-the-application)
+- [Database Setup](#database-setup)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Requirements
+
+- PHP 7.4 or higher
+- Composer
+- MySQL or MariaDB
+- Node.js and NPM (for frontend assets)
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -7,6 +27,126 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
+
+## Setup Instructions
+
+Follow these steps to set up and configure the application.
+
+1. Clone the Repository
+
+```bash
+git clone https://github.com/Amira-Mostafa/blogApp.git
+```
+
+2. Install PHP Dependencies
+
+```bash
+composer install
+```
+
+3. Install Node.js Dependencies
+
+```bash
+npm install
+```
+
+3. Create and Configure the .env File
+
+Copy the .env.example file to .env:
+
+```bash
+cp .env.example .env
+```
+
+Open the .env file and configure the database and other environment variables.
+
+5. Generate the Application Key
+
+```bash
+php artisan key:generate
+```
+
+## Running the Application
+
+1. Run Migrations
+
+```bash
+Copy code
+php artisan migrate
+```
+
+2. Seed the Database
+
+```bash
+php artisan db:seed
+```
+
+3. Compile Frontend Assets
+
+```bash
+npm run dev
+```
+4. Start the Development Server
+
+The application will be available at http://localhost:8000.
+
+```bash
+php artisan serve
+```
+
+## Database Setup
+
+1. Create a Database
+
+Create a new database in your MySQL or MariaDB server.
+
+2. Configure .env
+
+Update your .env file with the database credentials:
+
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=blog_application 
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+and application name
+
+
+```bash
+APP_NAME=blogApp
+```
+
+3. Run Migrations and Seeders
+
+
+```bash
+php artisan migrate
+php artisan db:seed
+```
+
+
+## Testing
+To run tests :
+
+```bash
+php artisan test
+```
+
+## Contributing
+Fork the repository.
+Create a feature branch (git checkout -b feature/your-feature).
+Commit your changes (git commit -am 'Add new feature').
+Push to the branch (git push origin feature/your-feature).
+Create a new Pull Request.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
 
 ## About Laravel
 
@@ -22,50 +162,6 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
-# blogApp
-small task using php/laravel and Javascript along side a simple UI using Html/Css/bootstrap
->>>>>>> origin/main
