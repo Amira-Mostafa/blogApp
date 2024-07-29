@@ -11,7 +11,7 @@
 <div class="container my-5">
     <h1>Create Post</h1>
     <br>
-    <form action="{{ route('storePost') }}" method="post" enctype="multipart/form-data" id="form">
+    <form action="{{ route('storePost') }}" method="POST" enctype="multipart/form-data" id="createForm">
         @csrf
         <div class="item form-group">
             <label class="col-form-label" for="title">Title<span class="required">*</span></label>
@@ -77,5 +77,8 @@
     </form>
 </div>
 
-
 @endsection
+@push('scripts')
+<script src="{{ asset('assets/js/validation.js') }}"></script>
+<script src="{{ asset('assets/js/ajax-post.js') }}"></script>
+@endpush

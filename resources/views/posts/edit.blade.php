@@ -3,9 +3,9 @@
 @section('content')
 
 <div class="container my-5">
-    <h1>Create Post</h1>
+    <h1>Edit Post</h1>
     <br>
-    <form action="{{ route('updatePost', $post->id) }}" id="form" method="post" enctype="multipart/form-data" data-parsley-validate class="form-horizontal form-label-left">
+    <form action="{{ route('updatePost', $post->id) }}" id="editForm" method="post" enctype="multipart/form-data" data-parsley-validate class="form-horizontal form-label-left">
         @csrf
         @method('put')
 
@@ -84,5 +84,7 @@
     </form>
 </div>
 
-
 @endsection
+@push('scripts')
+<script src="{{ asset('assets/js/ajax-post.js') }}"></script>
+@endpush

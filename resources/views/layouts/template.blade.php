@@ -11,7 +11,8 @@
         @yield('content')
     </div>
 
-    <script src="{{ asset('assets/js/app.js') }}"></script>
+    <!-- Stack for page-specific scripts -->
+    @stack('scripts')
 </body>
 
 </html>

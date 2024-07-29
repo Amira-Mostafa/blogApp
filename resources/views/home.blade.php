@@ -37,4 +37,5 @@
     </div>
 </div>
 @endforeach
+<script src="{{asset('assets/js/createPost.js')}}"> </script>
 @endsection

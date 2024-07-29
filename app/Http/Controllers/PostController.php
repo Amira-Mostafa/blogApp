@@ -62,12 +62,27 @@ class PostController extends Controller
             ],
             $message
         );
+        try {
+            $data['user_id'] = Auth::user()->id;
+            $data['thumbnail'] = $this->uploadFile($request->thumbnail, 'assets/images');
+            $post = Post::create($data);
+            $post->tags()->sync($data['tag_id']);
 
-        $data['user_id'] = Auth::user()->id;
-        $data['thumbnail'] = $this->uploadFile($request->thumbnail, 'assets/images');
-        $post = Post::create($data);
-        $post->tags()->sync($data['tag_id']);
-        return redirect()->route('home')->with('status', 'success')->with('message', 'Post added successfully');
+            return response()->json(['success' => true, 'message' => 'Post created successfully!']);
+        } catch (\Exception $e) {
+            return response()->json(['success' => false, 'message' => 'Post creation failed.']);
+        }
+
+        //     if ($request->ajax()) {
+        //         return response()->json(['success' => true, 'message' => 'Post created successfully!']);
+        //     }
+        //     // return redirect()->route('home')->with('status', 'success')->with('message', 'Post added successfully');
+        // } catch (\Exception $e) {
+        //     if ($request->ajax()) {
+        //         return response()->json(['success' => false, 'message' => $e->getMessage()]);
+        //     }
+        //     // return redirect()->route('home')->with('status', 'error')->with('message', 'Post creation failed.');
+
     }
 
     /**
