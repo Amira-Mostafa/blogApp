@@ -10,7 +10,7 @@ use App\Http\Controllers\PostController;
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 Route::get('/showPost/{id}', [PostController::class, 'show'])->name('showPost');
 Route::get('/search', [PostController::class, 'search'])->name('search');
 
