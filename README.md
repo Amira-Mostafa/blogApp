@@ -1,4 +1,4 @@
-# Blog Application
+# BlogApp
 
 A simple blog application built using php/laravel and Javascript along side a simple UI using Html/Css/Bootstrap
 
@@ -9,6 +9,7 @@ A simple blog application built using php/laravel and Javascript along side a si
 - [Running the Application](#running-the-application)
 - [Database Setup](#database-setup)
 - [Testing](#testing)
+- [Features](#features)
 - [License](#license)
 
 ## Requirements
@@ -105,13 +106,24 @@ php artisan serve
 ```
 The application should now be running at `http://127.0.0.1:8000`.
 
-
 ## Testing
+
 To run test suite :
 
 ```bash
 php artisan test
 ```
+
+## Features
+Authentication (registration, login, logout), 
+Home page displaying posts, 
+Show single post with comments, 
+Adding a comments to a post,
+Search posts,
+Tags on posts,
+Creating Posts by authenticated users,
+MyPosts showing single user posts,
+editing and deleting option to the authenicated user post.
 
 ## License
 
@@ -119,7 +131,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 ## About Laravel
-
   
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
